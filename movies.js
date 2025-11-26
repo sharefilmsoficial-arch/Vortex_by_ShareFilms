@@ -17,7 +17,7 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE/preview"
   },
   {
-    id: "across-the-spiderverse",
+    id: "spiderman2-across-the-spiderverse",
     title: "Spider-Man 2: A través del Spiderverso",
     year: 2023,
     duration: "2h 20min 05s",
@@ -30,7 +30,7 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
   },
   {
-    id: "beyond-into-the-spiderverse",
+    id: "spiderman3-beyond-into-the-spiderverse",
     title: "Spider-Man 3 Proximamente[2027]: Beyond into the spiderverse",
     year: 2027,
     duration: "2h 20min 05s",
@@ -69,7 +69,7 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1cVVPgzsRjlombZxDsP2YWa9F9cHs0xa7/preview"
   },
   {
-    id: "karatekid1984",
+    id: "karatekid-1984",
     title: "Karate Kid (1984)",
     year: 1984,
     duration: "2h 6min",
@@ -96,7 +96,7 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1A26SVMjdf0MWh_HmFkXG_qtOv_C4lYK2/preview"
   },
   {
-    id: "laleyendadeloschaneques",
+    id: "laleyendade-loschaneques",
     title: "La Leyenda de los Chaneques",
     year: 2023,
     duration: "1h 25min",
@@ -279,7 +279,7 @@ const MOVIES = [
   },
   {
     id: "kpop-hunters",
-    title: "Las Guerreras K-Pop",
+    title: "",
     year: 2025,
     duration: "1h 36min",
     rating: "PG-13",
@@ -383,15 +383,15 @@ const MOVIES = [
   },
   {
     id: "sonic-the-hedgehog",
-    title: "Sonic: Próximamente",
+    title: "Sonic",
     year: 2020,
     duration: "1h 39min",
     rating: "PG-13",
     genres: ["Infantil","Comedia"],
     description:"Sonic intenta atravesar las complejidades de la vida en la Tierra con su nuevo mejor amigo, un humano llamado Tom Wachowski. Deberán unir sus fuerzas para evitar que el malvado Dr. Robotnik capture a Sonic y use sus poderes para dominar el mundo.",
     trailerUrl: "trailers/sonic-the-hedgehog.mp4",
-    image: "images/sonic.jpeg",
-    post: "posters/.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/en/4/45/Sonic_the_Hedgehog_film_poster.jpg",
+    post: "https://thumbnails.cbsig.net/CBS_Production_Entertainment_VMS/2021/04/22/1888618563964/STH_SAlone_16_9_1920x1080_2995303_1920x1080.jpg",
     movie: "https://drive.google.com/file/d/1aYLsDe1HnNSqVjS7v_tiT-ztdcG3z7eU/preview"
   },
   {
@@ -403,8 +403,8 @@ const MOVIES = [
     genres: ["Infantil","Acción"],
     description:"Después de establecerse en Green Hills, Sonic quiere demostrar que tiene la madures de ser héroe. La prueba de fuego llega con el retorno del malvado Robotnik, y su nuevo compinche, Knuckles, en busca de una esmeralda que destruye civilizaciones. Sonic forma equipo con su propio compañero de fatigas, Tails, y juntos se lanzan a una aventura que les llevará por todo el mundo en busca de la preciada piedra para evitar que caiga en manos equivocadas.",
     trailerUrl: sampleTrailer,
-    image: "images/sonic2.jpeg",
-    post: "posters/.jpg",
+    image: "https://es.web.img3.acsta.net/pictures/22/02/18/10/20/5195258.jpg",
+    post: "https://diariodevenusville.com/wp-content/uploads/2022/04/sonic_the_hedgehog_two_00.jpg",
     movie: "https://drive.google.com/file/d/1F6fK3gCNh5afr7ARKLWIRgvZ6iyUWnko/preview"
   },
   {
@@ -416,8 +416,8 @@ const MOVIES = [
     genres: ["Infantil","Acción"],
     description:"Después de establecerse en Green Hills, Sonic quiere demostrar que tiene la madures de ser héroe. La prueba de fuego llega con el retorno del malvado Robotnik, y su nuevo compinche, Knuckles, en busca de una esmeralda que destruye civilizaciones. Sonic forma equipo con su propio compañero de fatigas, Tails, y juntos se lanzan a una aventura que les llevará por todo el mundo en busca de la preciada piedra para evitar que caiga en manos equivocadas.",
     trailerUrl: sampleTrailer,
-    image: "images/sonic3.jpeg",
-    post: "posters/.jpg",
+    image: "https://dx35vtwkllhj9.cloudfront.net/paramountpictures/sonic-the-hedgehog-3/images/regions/ar/onesheet.jpg",
+    post: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSTsxRDCZ5qygQdB8rPXOfIXWt3-5HIMVoQVEDdfbcqPm2SxYzlIXlR5GbfeJRTKeaPeDQTDRWg1fhUxensydQeNGWoZ7huNzPH5flmZBeQN1R4oBoddLJW_NN_cqsYGF1d2KntyJSjK6n42AJF0VbVoC3xMbsgsHlU7O_ZTXvfnr17hU2P-bgc0dNdhQN/s1196/69.jpg",
     movie: "preview"
   },
   {
@@ -429,21 +429,22 @@ const MOVIES = [
     genres: ["Terror","Misterio"],
     description:"Mike Schmidt, un guardia de seguridad con problemas que empieza a trabajar en el turno de noche de la abandonada pizzería Freddy Fazbear's Pizza. A medida que pasa sus noches en el trabajo, descubre que las mascotas animatrónicas del lugar cobran vida de manera aterradora, lo que lleva a situaciones de suspense y terror. La trama explora el oscuro secreto de la pizzería, donde los animatrónicos están poseídos por las almas de niños secuestrados.",
     trailerUrl: "trailers/five-nights-at-freddys.mp4",
-    image: "images/fnaf.jpg",
+    image: "https://m.media-amazon.com/images/M/MV5BNzFkMDE2ZmEtOWMwNy00MWM2LThlNjMtZWQzNWY5MTJjZjcxXkEyXkFqcGc@._V1_.jpg",
+    post: "https://www.nintenderos.com/wp-content/uploads/2023/09/fnaf-pelicula-1.jpg",
     movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
   },
   {
     id: "five-nights-at-freddys2",
     title: "Five Nights At Freddy's 2: Próximamente",
     year: 2026,
-    duration: "1h 50min",
+    duration: "1h 45min",
     rating: "PG-13",
     genres: ["Terror","Misterio"],
-    description:"Mike Schmidt, un guardia de seguridad con problemas que empieza a trabajar en el turno de noche de la abandonada pizzería Freddy Fazbear's Pizza. A medida que pasa sus noches en el trabajo, descubre que las mascotas animatrónicas del lugar cobran vida de manera aterradora, lo que lleva a situaciones de suspense y terror. La trama explora el oscuro secreto de la pizzería, donde los animatrónicos están poseídos por las almas de niños secuestrados.",
+    description:"Ha pasado un año desde la pesadilla sobrenatural en la pizzería Freddy Fazbear. La historia de lo que ocurrió allí se ha convertido en leyenda local, dando pie al primer “Fazfest”. Mike y Vanessa han mantenido en secreto la verdad a Abby, la hermana de 11 años de Mike. Pero cuando Abby decide reencontrarse con Freddy, Bonnie, Chica y Foxy, desata una serie de eventos aterradores que revelarán oscuros secretos sobre el origen de Freddy’s, desvelando un horror oculto por décadas.",
     trailerUrl: "trailers/five-nights-at-freddys2.mp4",
-    image: "images/fnaf2.jpg",
-    post: "posters/.jpg",
-    movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
+    image: "https://m.media-amazon.com/images/M/MV5BZmQ3NmIxNTgtYjFiNS00NzliLWI0YzAtZDkxY2E0YWIxZDEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    post: "https://i.ytimg.com/vi/D0hX6VvGgBg/maxresdefault.jpg",
+    movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i0"
   },
   {
     id: "five-nights-at-freddys3",
@@ -507,6 +508,7 @@ const MOVIES = [
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
     image: "images/deadpool2.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1w9pPohiLbkp3GTjTJNqPsh60khrX68Ab/preview"
   },
   {
@@ -519,6 +521,7 @@ const MOVIES = [
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
     image: "images/deadpool3.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1w9pPohiLbkp3GTjTJNqPsh60khrX68Ab/preview"
   },
   {
@@ -543,6 +546,7 @@ const MOVIES = [
     description:"Saldrá una luna cosecha azul, y las hadas utilizarán una piedra lunar para restaurar el Árbol del Polvillo de Hadas, la fuente de su magia. Pero cuando Tinker Bell pone en riesgo todo Pixie Hollow, deberá aventurarse por el mar en una búsqueda para arreglar las cosas. Con su amigo Terence y la luciérnaga encantadora y pícara Blaze, Tink se enfrentará a un nuevo mundo y descubrirá el mejor tesoro.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell2.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1iL5GrlinMujHqedzyQU0ebS7gVaSCkPP/preview"
   },
   {
@@ -555,6 +559,7 @@ const MOVIES = [
     description:"Antes de conocer a Wendy y los Niños Perdidos, Tinker Bell conoció a Lizzy, una niña que cree en las hadas. En la campiña se da un encuentro cuando Tink es descubierta por Lizzy. Sus mundos se unen y Tink desarrolla un lazo con la niña curiosa que necesita una amiga. Sus hadas compañeras lanzan un audaz rescate, y Tinker Bell pone en riesgo su seguridad y el futuro de las hadas.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell3.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1shBNCAb3QkavzXx7PKbe8HLahWQo7fCt/preview"
   },
   {
@@ -567,6 +572,7 @@ const MOVIES = [
     description:"Una misteriosa fuerza atrae a Tink para cruzar la frontera hacia el desconocido mundo de los Bosques de Invierno, un lugar donde las hadas de Pixie Hollow tienen prohibido ir. Allí descubre un secreto que cambiará su vida para siempre: tiene una hermana llamada Periwinkle. Cuando Pixie Hollow se ve amenazado, el dúo debe trabajar unido para salvar ambos mundos.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell4.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1FbnSkyTL26eRGxc-PZGHgQLz7Kqpa0GB/preview"
   },
   {
@@ -579,6 +585,7 @@ const MOVIES = [
     description:"Desde el mundo de Peter Pan, llega una aventura sobre Zarina, un hada inteligente y ambiciosa cautivada por el polvillo de hada azul y sus infinitas posibilidades. Cuando las ideas salvajes de Zarina la meten en problemas, huye de la tierra de las hadas y se une a los piratas intrigantes de Skull Rock. Tinker Bell y sus amigos deben encontrar a Zarina, y luchan contra la banda de piratas liderada por un grumete llamado James, quien pronto se hará conocido como el propio capitán Garfio.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell5.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1TYB_T6hH39nAcvvpARykmTiNOdw2rKAQ/preview"
   },
   {
@@ -591,6 +598,7 @@ const MOVIES = [
     description:"El antiguo mito de una criatura legendaria, la Bestia de Nunca Jamás, provoca curiosidad en Tinker Bell y su amiga Fawn, un hada de los animales que romperá las reglas para ayudar a cualquier animal que lo necesite. Pero esta criatura no es bienvenida en la Tierra de las Hadas, y las hadas exploradoras pretenden capturarla. Fawn, que ve un corazón tierno bajo su hosco exterior, deberá convencer a sus amigas de rescatar a la Bestia de Nunca Jamás. Algunas secuencias o patrones de luces intermitentes pueden afectar a espectadores fotosensibles.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell6.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1gj_AJBWsrdK17wGRb0TX9q2ntOmY8F2l/preview"
   },
   {
@@ -603,6 +611,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/finding-nemo.jpeg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -615,10 +624,11 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/finding-dory.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
-    id: "anaconda-el-despertar",
+    id: "Deep-Sea-Mutant-Snake",
     title: "Anaconda El Despertar: Próximamente",
     year: 2016,
     duration: "1h 37min",
@@ -627,6 +637,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/anaconda-el-despertar.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -639,6 +650,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/oni-goroshi.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -651,6 +663,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/a_minecraft-movie.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -663,6 +676,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/truman-show.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -675,6 +689,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/apocalypto.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1pwo5WpW_nZQnQzlXa3B6xJYEYZW__qbg/preview"
   },
   {
@@ -687,6 +702,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/bright-burn.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -699,6 +715,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/shrek.jpg",
+    post: "",
     movie: ""
   },
   {
@@ -711,6 +728,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/shrek-2.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -723,6 +741,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/shrek-3.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -735,6 +754,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/shrek-4.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -747,10 +767,11 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/The_Gangster_The_Cop_The_Devil.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
-    id: "destino-final-lazos-de-sangre",
+    id: "final destination_6-bloodlines",
     title: "Destino Final - Lazos de Sangre: Próximamente",
     year: 2016,
     duration: "1h 37min",
@@ -759,6 +780,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/destino-final-lazos-de-sangre.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -771,6 +793,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/captain-america.webp",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -783,6 +806,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/captain-america2.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -807,6 +831,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzlHxBqvhvJFyM6qx1PSuKzjDmahiwmLd7w&s",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -819,6 +844,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/b14b33a4a541520ab9d9d217678375991e5adc5e400dfcd7ff4bde8966669863.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -831,6 +857,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/a460a32bc1a4a2cbd111a1fd95d11291b6fa6542aae39cc67c1f8def4d6a6d58.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -855,10 +882,11 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://lumiere-a.akamaihd.net/v1/images/toy_story_c00b8d79.jpeg?region=0,0,1080,1350",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
-    id: "guardianes-de-la-galaxia",
+    id: "guardians-of-the-galaxy",
     title: "Guardianes de la Galaxia: Próximamente",
     year: 2016,
     duration: "1h 37min",
@@ -866,11 +894,12 @@ const MOVIES = [
     genres: ["Acción", "Aventura","Comedia","Animación"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    image: "images/captain-america3.webp",
+    image: "https://m.media-amazon.com/images/M/MV5BYWI0NTNlN2MtMWRjNy00M2QwLWFlZTgtZTlkMTZiYTU2NTk1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
-    id: "guardianes-de-la-galaxia-2",
+    id: "guardians-of-the-galaxy-2",
     title: "Guardianes de la Galaxia 2",
     year: 2016,
     duration: "1h 37min",
@@ -879,10 +908,11 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/guardianes-de-la-galaxia-2.avif",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
-    id: "guardianes-de-la-galaxia-3",
+    id: "guardians-of-the-galaxy-3",
     title: "Guardianes de la Galaxia 3: Próximamente",
     year: 2016,
     duration: "1h 37min",
@@ -890,7 +920,8 @@ const MOVIES = [
     genres: ["Acción", "Aventura","Comedia","Animación"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    image: "images/captain-america3.webp",
+    image: "https://lumiere-a.akamaihd.net/v1/images/lat_2ae5e247.jpeg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -903,10 +934,11 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/spies-in-disguise.webp",
+    post: "",
     movie: "https://drive.google.com/file/d/10g6bvHCasxrzhiywS3lXDmxd8n4X2Kx7/preview"
   },
   {
-    id: "la-leyenda-del-jinete-sin-cabeza",
+    id: "sleepy-hollow",
     title: "La Leyenda del Jinete Sin Cabeza",
     year: 2016,
     duration: "1h 37min",
@@ -915,10 +947,11 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/la-leyenda-del-jinete-sin-cabeza.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
-    id: "guardianes-de-la-galaxia-3",
+    id: "the-last-airbender",
     title: "El Ultimo Maestro del Aire: Próximamente",
     year: 2016,
     duration: "1h 37min",
@@ -926,7 +959,8 @@ const MOVIES = [
     genres: ["Acción", "Aventura","Comedia","Animación"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    image: "images/captain-america3.webp",
+    image: "https://m.media-amazon.com/images/S/pv-target-images/471e228a610a18f78a0b00d2c96321a6fb42397f035d1de4da2637e1330dc05e.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/5a16998dd7d5f858e0a9e4e47a8be93ccd53a00ffa978bd124338a476f612fb8._SX1080_FMjpg_.jpg",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -939,10 +973,11 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTND_aT98Q9K37HgTKJwBqZZVCPQGrMTMV44w&s",
+    post:"https://i.ytimg.com/vi/pINQLcVgwvU/sddefault.jpg",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
-    id: "kungfu-panda-2",
+    id: "kung-fu-panda-2",
     title: "Kunfu Panda 2: Próximamente",
     year: 2016,
     duration: "1h 37min",
@@ -950,7 +985,8 @@ const MOVIES = [
     genres: ["Acción", "Aventura","Comedia","Animación"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    image: "images/captain-america3.webp",
+    image: "https://es.web.img3.acsta.net/medias/nmedia/18/82/36/56/19734959.jpg",
+    post: "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/0d054460-73d1-4c10-99d9-57b9438e1dfb/27b60aec-abf7-4812-9eec-4e28e7d5f652?host=wbd-images.prod-vod.h264.io&partner=beamcom",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -962,7 +998,7 @@ const MOVIES = [
     genres: ["Acción", "Aventura","Comedia","Animación"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    image: "images/captain-america3.webp",
+    image: "https://zoomf7.net/wp-content/uploads/2016/03/24qz9huzy8k3cdo4hrwkmztt7gh.jpg",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -974,19 +1010,8 @@ const MOVIES = [
     genres: ["Acción", "Aventura","Comedia","Animación"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    image: "images/captain-america3.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
-  },
-  {
-    id: "kung-fu-panda-5",
-    title: "Kunfu Panda 5: Próximamente",
-    year: 2016,
-    duration: "1h 37min",
-    rating: "PG-13",
-    genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
-    trailerUrl: sampleTrailer,
-    image: "images/captain-america3.webp",
+    image: "https://pics.filmaffinity.com/Kung_Fu_Panda_4-675656087-large.jpg",
+    post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   }
 ];
