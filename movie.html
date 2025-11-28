@@ -8,7 +8,7 @@
 </head>
 <body class="movie-page">
 <div id="app">
-  <div class="back-btn"><a href="index.html">← Volver</a></div>
+  <div class="back-btn"><a href="javascript:history.back()">← Volver</a></div>
   <div class="movie-hero" id="hero">
     <div id="videoContainer">
 
@@ -124,11 +124,11 @@ qs('#playMovie').addEventListener('click', ()=>{
   if(movie.movie && movie.movie.startsWith('http')){
     window.open(movie.movie, '_blank');
   } else {
-    alert('Enlace de la película no disponible.');
+    alert('Película no disponible.');
   }
 });
 
-/// 👍👎 Likes y dislikes
+//👍👎 Likes y dislikes
 const likeBtn = qs('#likeBtn');
 const dislikeBtn = qs('#dislikeBtn');
 const likeCountEl = qs('#likeCount');
