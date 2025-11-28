@@ -258,13 +258,15 @@ body {
 
 .side-menu a:hover {
   background: rgba(0, 192, 255, 0.1);
+  color:#fff;
+  text-shadow:0 0 10px #0099ff;
+  padding-left: 20px;
 }
 
 /* visible */
 .side-menu.active {
   left: 0;
 }
-
 /* Ajuste topbar */
 .topbar {
   display: flex;
@@ -370,4 +372,3 @@ body {
     cursor: pointer;
     font-size: 20px;
     user-select: none;
-}
