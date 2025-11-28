@@ -50,7 +50,7 @@ const MOVIES = [
     rating: "R",
     genres: ["Acción", "Thriller", "Crimen"],
     description:  "Un agente del FBI se somete a una cirugía experimental para asumir la identidad del terrorista que mató a su hijo. Pero las cosas salen terriblemente mal.",
-    trailerUrl: sampleTrailer,
+    trailerUrl: "7tp_UB4jTKujqn/preview",
     image: "https://m.media-amazon.com/images/S/pv-target-images/c2668312b9f29fb8e5780ddcb9a183831f4acc01347c3b704e098f48477df639.jpg",
     post: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/0cbfc5e5-71fe-4605-99fc-1ae7f66d2dc0/compose?aspectRatio=1.78&format=webp&width=1200",
     movie: "https://drive.google.com/file/d/1FsEqOKWlq4zMSeYOF-7tp_UB4jTKujqn/preview"
@@ -77,7 +77,7 @@ const MOVIES = [
     genres: ["Drama", "Deportes", "Inspiradora"],
     description:
       "Daniel se muda a California y sufre acoso hasta que un sabio maestro de karate, el Sr. Miyagi, le enseña el arte del equilibrio y la disciplina.",
-    trailerUrl: sampleTrailer,
+    trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
     image: "https://m.media-amazon.com/images/S/pv-target-images/8525873a8c8da460d36c6230856d1080c6a995670b1e15100fd796d18d56bc3e.jpg",
     post: "https://m.media-amazon.com/images/S/pv-target-images/36c87917428a50fdbb5d7481433ddbddf544083e8d6d2b141ec61e84f5a5448c.jpg",
     movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview"
@@ -129,7 +129,7 @@ const MOVIES = [
     rating: "PG-13",
     genres: ["Suspenso", "Drama", "Ciencia ficción"],
     description: "Un adolescente y su amigo deben salvar a su padre de un hombre que ha pedido la construcción de dispositivo de tiempo.",
-    trailerUrl: sampleTrailer,
+    trailerUrl: "_i5endV/preview",
     image: "https://m.media-amazon.com/images/M/MV5BYzhmZTExNjktYWNmYS00YzdmLTllZjktYTU5M2ViMDk1MTU4XkEyXkFqcGc@._V1_.jpg",
     post: "https://m.media-amazon.com/images/S/pv-target-images/498665c87a32081ff493eb39995ff60e6c42705eb9c3fc54fbca741099a7f2bd.jpg",
     movie: "https://drive.google.com/file/d/1mi8Ltlqx01KVDLKIIQXL0l05A_i5endV/preview"
@@ -154,7 +154,7 @@ const MOVIES = [
     duration: "1h 58min",
     rating: "PG-13",
     genres: ["Aventura","Musical"],
-    description:"Buzz Lightyear se embarca en una aventura intergaláctica con un grupo de reclutas ambiciosos y su compañero robot. Los amigos tendrán que aprender a trabajar juntos para escapar del malvado Zurg y su ejército de robots.",
+    description:"Una inundación separa al cachorro Mufasa de sus padres, pero el rey de los leones lo acoge como a uno de los suyos tras demostrar su valentía.Al crecer, una manada de leones desterrados y los celos de su hermano adoptivo lo pondrán en peligro.",
     trailerUrl: "trailers/mufasa.mp4",
     image: "https://images.justwatch.com/poster/326095284/s718/mufasa-el-rey-leon.jpg",
     post: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/018ffc14-acb8-44c6-82c7-3c4dd3091c3f/compose?aspectRatio=1.78&format=webp&width=1200",
@@ -175,7 +175,7 @@ const MOVIES = [
   },
   {
     id: "how-train-your-dragon-2",
-    title: "Cómo Entrenar a tu Dragón 2: Próximamente",
+    title: "Cómo Entrenar a tu Dragón 2",
     year: 2014,
     duration: "1h 42min",
     rating: "PG",
@@ -188,14 +188,14 @@ const MOVIES = [
   },
   {
     id: "how-train-your-dragon-3",
-    title: "Cómo Entrenar a tu Dragón 3 - El Mundo Oculto: Próximamente",
+    title: "Cómo Entrenar a tu Dragón 3",
     year: 2019,
     duration: "1h 44min",
     rating: "PG",
     genres: ["Animación","Aventura","Infantil","Acción"],
     description: "Hipo y Chimuelo enfrentando una nueva amenaza en forma de un cazador de dragones llamado Grimmel, que quiere capturar a Desdentado. Mientras tanto, el descubrimiento de una Furia Luminosa, una dragona salvaje, pone a prueba la relación entre Hipo y Chimuelo.",
     trailerUrl: "trailers/dragon3.mp4",
-    image: "https://play-lh.googleusercontent.com/P6oso1hC1JGLsr1NT_V-74KR6KpJg7oX5Zmdso7-SJfrQHhgSxMk_gm87cV20MvQbBzn=w240-h480-rw",
+    image: "https://m.media-amazon.com/images/S/pv-target-images/daf0864124d5b8b8bf1881a9b0b9e577b3ea10d8af5ec1ffb8e46c5a290d745c.jpg",
     post: "https://criticinema.com/wp-content/uploads/2019/02/C%C3%B3mo-entrenar-a-tu-drag%C3%B3n-3-cover-1024x436.jpg",
     movie: "https://drive.google.com/file/d/1x4CYvRvkriWKcL2aE0nqOJY1tPAq71I2/preview"
   },
@@ -235,7 +235,7 @@ const MOVIES = [
     trailerUrl: "trailers/avatar3-fireandash.mp4",
     image: "https://media.glamour.mx/photos/6880137b2a74ff906caa7729/master/w_1600%2Cc_limit/avatar-fuego-y-cenizas-poster.jpg",
     post: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/41ae7704-8740-4eb8-bb01-e4285e3b9011/compose?aspectRatio=1.78&format=webp&width=1200",
-    movie: "https://drive.google.com/file/d/12RRSn0kLKUea3RbJlg32Z7zLZE7v__B5/preview"
+    movie: ""
   },
   {
     id: "flow",
@@ -244,8 +244,7 @@ const MOVIES = [
     duration: "1h 25min",
     rating: "PG",
     genres: ["Animación", "Drama"],
-    description:
-      "Un gato debe aprender a convivir con otros animales en un barco que flota sobre un mundo inundado.",
+    description: "Un gato debe aprender a convivir con otros animales en un barco que flota sobre un mundo inundado.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/6cc5f6739b1bf93cc4a740df55f5fbc40211fe9303b91f1ab68311bd68265c73.png",
     post: "https://m.media-amazon.com/images/S/pv-target-images/3d4f0a9dc2fd8e0dcbca256e5dc08e32f9c3bf8b560a1171ae7bcbea7814b7f3.jpg",
@@ -259,7 +258,7 @@ const MOVIES = [
     rating: "R",
     genres: ["Terror", "Suspenso"],
     description: "Chris va a conocer a los padres de Rose, su novia. Al principio se muestran encantadores, si bien un tanto nerviosos. Chris supone que se debe a que él es negro, pero un poco más tarde descubre que sus suegros ocultan un secreto espeluznante.",
-    trailerUrl: sampleTrailer,
+    trailerUrl: "trailers/get-out.mp4",
     image: "https://m.media-amazon.com/images/M/MV5BM2E0MGQ2N2MtYjVkOS00MDZmLTkzZGUtN2FjYTk4MDdiYzc1XkEyXkFqcGc@._V1_.jpg",
     post: "https://pegadoalabutaca.com/wp-content/uploads/2017/05/huye.png?w=816",
     movie: "https://drive.google.com/file/d/1en6HYU4w0GfvSf3PT8ZAqcxzbHvCcjHB/preview"
@@ -401,7 +400,7 @@ const MOVIES = [
     duration: "2h 2min",
     rating: "PG",
     genres: ["Infantil","Acción"],
-    description:"Después de establecerse en Green Hills, Sonic quiere demostrar que tiene la madures de ser héroe. La prueba de fuego llega con el retorno del malvado Robotnik, y su nuevo compinche, Knuckles, en busca de una esmeralda que destruye civilizaciones. Sonic forma equipo con su propio compañero de fatigas, Tails, y juntos se lanzan a una aventura que les llevará por todo el mundo en busca de la preciada piedra para evitar que caiga en manos equivocadas.",
+    description:"Dr. Robotnik escapó del planeta hongo y busca aliarse con Knuckles para encontrar la Esmeralda Maestra, que tiene el poder de hacer realidad los pensamientos. Sonic, ahora intentando ser un héroe, se une con Tails para encontrar la gema antes que sus enemigos.",
     trailerUrl: sampleTrailer,
     image: "https://es.web.img3.acsta.net/pictures/22/02/18/10/20/5195258.jpg",
     post: "https://diariodevenusville.com/wp-content/uploads/2022/04/sonic_the_hedgehog_two_00.jpg",
@@ -414,11 +413,11 @@ const MOVIES = [
     duration: "2h 2min",
     rating: "PG",
     genres: ["Infantil","Acción"],
-    description:"Después de establecerse en Green Hills, Sonic quiere demostrar que tiene la madures de ser héroe. La prueba de fuego llega con el retorno del malvado Robotnik, y su nuevo compinche, Knuckles, en busca de una esmeralda que destruye civilizaciones. Sonic forma equipo con su propio compañero de fatigas, Tails, y juntos se lanzan a una aventura que les llevará por todo el mundo en busca de la preciada piedra para evitar que caiga en manos equivocadas.",
+    description:"Sonic, Tails y Knuckles se enfrentan a un nuevo y poderoso rival, Shadow, un erizo oscuro con poderes similares a los de Sonic. Shadow, que ha estado en estasis por 50 años, es despertado por el Dr. Gerald Robotnik, abulo del Dr. Eggman, quien desea usarlo para sus planes.",
     trailerUrl: sampleTrailer,
     image: "https://dx35vtwkllhj9.cloudfront.net/paramountpictures/sonic-the-hedgehog-3/images/regions/ar/onesheet.jpg",
     post: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSTsxRDCZ5qygQdB8rPXOfIXWt3-5HIMVoQVEDdfbcqPm2SxYzlIXlR5GbfeJRTKeaPeDQTDRWg1fhUxensydQeNGWoZ7huNzPH5flmZBeQN1R4oBoddLJW_NN_cqsYGF1d2KntyJSjK6n42AJF0VbVoC3xMbsgsHlU7O_ZTXvfnr17hU2P-bgc0dNdhQN/s1196/69.jpg",
-    movie: "preview"
+    movie: ""
   },
   {
     id: "five-nights-at-freddys",
@@ -444,7 +443,7 @@ const MOVIES = [
     trailerUrl: "trailers/five-nights-at-freddys2.mp4",
     image: "https://m.media-amazon.com/images/M/MV5BZmQ3NmIxNTgtYjFiNS00NzliLWI0YzAtZDkxY2E0YWIxZDEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     post: "https://i.ytimg.com/vi/D0hX6VvGgBg/maxresdefault.jpg",
-    movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i0"
+    movie: ""
   },
   {
     id: "five-nights-at-freddys3",
@@ -453,11 +452,11 @@ const MOVIES = [
     duration: "1h 50min",
     rating: "PG-13",
     genres: ["Terror","Misterio"],
-    description:"Mike Schmidt, un guardia de seguridad con problemas que empieza a trabajar en el turno de noche de la abandonada pizzería Freddy Fazbear's Pizza. A medida que pasa sus noches en el trabajo, descubre que las mascotas animatrónicas del lugar cobran vida de manera aterradora, lo que lleva a situaciones de suspense y terror. La trama explora el oscuro secreto de la pizzería, donde los animatrónicos están poseídos por las almas de niños secuestrados.",
+    description:"Mike Schmidt se dirige a Fazbear's Fright: The Horror Attraction después de enterarse que el alma de William Afton esta dentro del animatrónico Spring-Bonnie, y este volvió para vengarse.",
     trailerUrl: sampleTrailer,
     image: "images/five-nights-at-freddys-3-movie-poster-fan-made-by-me-model-v0-jv59k3jszvmf1.webp",
-    post: "posters/.jpg",
-    movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
+    post: "https://nintenduo.com/wp-content/uploads/2024/09/FNAF-3-Pelicula-Destacada.webp",
+    movie: ""
   },
   {
     id: "five-nights-at-freddys4",
@@ -466,23 +465,23 @@ const MOVIES = [
     duration: "1h 50min",
     rating: "PG-13",
     genres: ["Terror","Misterio"],
-    description:"Mike Schmidt, un guardia de seguridad con problemas que empieza a trabajar en el turno de noche de la abandonada pizzería Freddy Fazbear's Pizza. A medida que pasa sus noches en el trabajo, descubre que las mascotas animatrónicas del lugar cobran vida de manera aterradora, lo que lleva a situaciones de suspense y terror. La trama explora el oscuro secreto de la pizzería, donde los animatrónicos están poseídos por las almas de niños secuestrados.",
+    description:"El niño Crying es atormentado por su hermano Mike junto con sus amigos cinco dás antes de su cumpleaños, y a causa de esto tiene pesadillas con animatrónicos que lo atormentan y tendrá que sobrevivir las cinco noches antes de su cumpleaños.",
     trailerUrl: sampleTrailer,
     image: "images/@fredbearfilms.jpg",
-    post: "posters/.jpg",
-    movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
+    post: "https://store-images.s-microsoft.com/image/apps.27998.14319236246610425.66fb0c70-79cc-471f-8a96-e56f4d317469.768e364a-76d9-473e-a1c8-c602e834dfdd?q=90&w=480&h=270",
+    movie: ""
   },
   {
     id: "logan-wolverine",
-    title: "Logan - Wolverine",
+    title: "Logan • Wolverine",
     year: 2017,
     duration: "2h 17min",
     rating: "PG-13",
     genres: ["Animación", "Ciencia Ficción", "Superhéroes"],
     description:"En un futuro cercano donde los mutantes están casi extintos, un cansado y envejecido Logan, cuyos poderes curativos están disminuyendo, se gana la vida como conductor de limusinas y cuida a un Profesor X enfermo y debilitado. Su vida cambia drásticamente cuando una mujer le pide que proteja a una joven mutante llamada Laura, quien es perseguida por fuerzas oscuras y posee poderes similares a los de él. Juntos, Logan, Charles y Laura emprenden un viaje para llevar a la niña a un refugio seguro llamado «Edén», enfrentándose a una peligrosa conspiración mientras Logan busca la redención.",
     trailerUrl: sampleTrailer,
-    image: "images/logan-wolverine.jpg",
-    post: "posters/.jpg",
+    image: "https://preview.redd.it/is-wolverine-from-logan-2017-the-same-wolverine-as-the-one-v0-09qri59kyggd1.jpeg?auto=webp&s=27cb3bb8ea0987722b7837508d9007110b68ba6b",
+    post: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/cf7b0eb8-e314-4ba0-8d89-398e02da4103/compose?aspectRatio=1.78&format=webp&width=1200",
     movie: "https://drive.google.com/file/d/11LZONN67ENZ7vo7wPpIPg2c6K4RzqLqW/preview"
   },
   {
@@ -492,11 +491,11 @@ const MOVIES = [
     duration: "2h 08min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
-    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    description:"Deadpool cuenta la historia de Wade Wilson, un mercenario que, tras ser diagnosticado con cáncer terminal, se somete a un experimento para curarse que le otorga un factor de curación y lo desfigura. Con su nuevo aspecto y un sentido del humor retorcido, adopta la identidad de Deadpool para cazar al villano que arruinó su vida y, a pesar de sus temores, buscar a su novia.",
     trailerUrl: sampleTrailer,
     image: "images/deadpool.png",
     post: "posters/.jpg",
-    movie: "https://drive.google.com/file/d/1w9pPohiLbkp3GTjTJNqPsh60khrX68Ab/preview"
+    movie: "aun no"
   },
   {
     id: "deadpool2",
@@ -505,23 +504,23 @@ const MOVIES = [
     duration: "2h 08min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
-    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    description:"Deadpool debe proteger a Russell, un adolescente mutante, de Cable, un soldado del futuro genéticamente modificado. Deadpool se alía con otros superhéroes para poder derrotar al poderoso Cable.",
     trailerUrl: sampleTrailer,
     image: "images/deadpool2.jpg",
     post: "",
-    movie: "https://drive.google.com/file/d/1w9pPohiLbkp3GTjTJNqPsh60khrX68Ab/preview"
+    movie: "aun no"
   },
   {
     id: "deadpool3",
-    title: "DeadPool 3",
+    title: "DeadPool 3 • Wolverine",
     year: 2024,
     duration: "2h 08min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
-    image: "images/deadpool3.jpg",
-    post: "",
+    image: "https://moviepostermexico.com/cdn/shop/files/deadpool_and_wolverine_ver6_xlg_1024x1024@2x.jpg?v=1725044429",
+    post: "https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/1facf04c-c215-11ee-aa78-d602bea5d5c0/deadpool-3-trailer.jpg",
     movie: "https://drive.google.com/file/d/1w9pPohiLbkp3GTjTJNqPsh60khrX68Ab/preview"
   },
   {
@@ -533,7 +532,7 @@ const MOVIES = [
     genres: ["Comedia", "Acción"],
     description:"Viaja al secreto mundo de Pixie Hollow y escucha cantar a Tinker Bell mientras se revela la historia de la famosa hada de Disney. ¿Te preguntaste cómo surge el brillo de la naturaleza? ¿Quién le da luz y color entre las estaciones? Tinker Bell y sus cuatro mejores amigas hadas convierten el invierno en primavera y aprenden la importancia de ser fiel a uno mismo.",
     trailerUrl: sampleTrailer,
-    image: "images/tinkerbell.jpg",
+    image: "https://m.media-amazon.com/images/S/pv-target-images/54ee3152e0e330b2a9d00c2a6ac6bf6a345aa38d4b19264ada06ef6029b8deed.jpg",
     movie: "https://drive.google.com/file/d/15hdvpjmUCJ9kNnUfOn5JOuVqLpQiVkR4/preview"
   },
   {
@@ -545,7 +544,7 @@ const MOVIES = [
     genres: ["Comedia", "Acción"],
     description:"Saldrá una luna cosecha azul, y las hadas utilizarán una piedra lunar para restaurar el Árbol del Polvillo de Hadas, la fuente de su magia. Pero cuando Tinker Bell pone en riesgo todo Pixie Hollow, deberá aventurarse por el mar en una búsqueda para arreglar las cosas. Con su amigo Terence y la luciérnaga encantadora y pícara Blaze, Tink se enfrentará a un nuevo mundo y descubrirá el mejor tesoro.",
     trailerUrl: sampleTrailer,
-    image: "images/tinkerbell2.jpg",
+    image: "https://m.media-amazon.com/images/S/pv-target-images/e6c0b227ea58c607a5812d7f908a0665c85154f7dd1527ce9694fdb386b43bb2.jpg",
     post: "",
     movie: "https://drive.google.com/file/d/1iL5GrlinMujHqedzyQU0ebS7gVaSCkPP/preview"
   },
@@ -558,7 +557,7 @@ const MOVIES = [
     genres: ["Comedia", "Acción"],
     description:"Antes de conocer a Wendy y los Niños Perdidos, Tinker Bell conoció a Lizzy, una niña que cree en las hadas. En la campiña se da un encuentro cuando Tink es descubierta por Lizzy. Sus mundos se unen y Tink desarrolla un lazo con la niña curiosa que necesita una amiga. Sus hadas compañeras lanzan un audaz rescate, y Tinker Bell pone en riesgo su seguridad y el futuro de las hadas.",
     trailerUrl: sampleTrailer,
-    image: "images/tinkerbell3.jpg",
+    image: "https://m.media-amazon.com/images/I/81cwwSrr5OL._AC_UF894,1000_QL80_.jpg",
     post: "",
     movie: "https://drive.google.com/file/d/1shBNCAb3QkavzXx7PKbe8HLahWQo7fCt/preview"
   },
@@ -604,11 +603,11 @@ const MOVIES = [
   {
     id: "finding-nemo",
     title: "Buscando a Nemo: Próximamente",
-    year: 2016,
+    year: 2003,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Una esposa(Coral) asesinada por un asesino serial y de su hijo(Nemo) que tiene un problema físico, tiempo después su hijo es secuestrado y el padre(Marlin) tiene que rastrear y perseguir al secuestrador por varios kilómetros con ayuda de una mujer(Dory) que tiene problemas mentales.",
     trailerUrl: sampleTrailer,
     image: "images/finding-nemo.jpeg",
     post: "",
@@ -624,7 +623,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/finding-dory.jpg",
-    post: "",
+    post: "https://www.eje21.com.co/site/wp-content/uploads/2013/04/buscando%20a%20dory.jpg",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -634,11 +633,11 @@ const MOVIES = [
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Una mujer trata de conseguir pruebas contra una empresa biológica que es culpable por la muerte de su prometido. En compañía de un amigo, la mujer se dirige a una isla en la que ocurren demasiadas muertes sospechosas.",
     trailerUrl: sampleTrailer,
     image: "images/anaconda-el-despertar.jpg",
-    post: "",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    post: "https://i.ytimg.com/vi/DN9hIg5Qx6s/maxresdefault.jpg",
+    movie: "aun no"
   },
   {
     id: "oni-goroshi",
@@ -669,15 +668,15 @@ const MOVIES = [
   {
     id: "truman-show",
     title: "El Show de Truman",
-    year: 2016,
+    year: 1998,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Truman Burbank, un feliz agente de seguros, cree llevar una vida normal, pero no sabe que está siendo grabado las 24 horas del día y que todo lo que hace se emite en televisión.",
     trailerUrl: sampleTrailer,
     image: "images/truman-show.jpg",
-    post: "",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    post: "https://educarpersonas.com/wp-content/uploads/2023/05/truman.jpg",
+    movie: "https://drive.google.com/file/d/1Sao8mHfFPMDhyV03w7X8dmh-NVEWj5Nb/preview"
   },
   {
     id: "apocalypto",
@@ -708,54 +707,54 @@ const MOVIES = [
   {
     id: "shrek",
     title: "Shrek",
-    year: 2016,
+    year: 2001,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Un ogro llamado Shrek vive en su pantano, pero su preciada soledad se ve súbitamente interrumpida por la invasión de los ruidosos personajes de los cuentos de hadas. Todos fueron expulsados de sus reinos por el malvado Lord Farquaad. Decidido a salvar su hogar, Shrek hace un trato con Farquaad y se prepara para rescatar a la princesa Fiona, quien será la esposa de Farquaad.",
     trailerUrl: sampleTrailer,
-    image: "images/shrek.jpg",
-    post: "",
-    movie: ""
+    image: "https://m.media-amazon.com/images/S/pv-target-images/030f9ae65cadc9afc0e3c51ed35d2ddeb814f213d7a87fc5aa4445738ebb32b9.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/5a5cf867eb9d4fc1e5d44fa81bca4ced972e299967c7d040f5ff49fef7b49b51.jpg",
+    movie: "https://drive.google.com/file/d/1F__HmYqKuxrvZHAFu2bwZxi1AyI2mk1p/view?usp=sharing"
   },
   {
     id: "shrek-2",
     title: "Shrek 2",
-    year: 2016,
+    year: 2004,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Los padres de la princesa y reyes de Muy, Muy Lejano invitan a cenar Shrek y Fiona, pero el rey Harold descubre que su yerno es un ogro y acude al Hada Madrina para alejar a Shrek de Fiona y lograr que se case con el guapo Príncipe Encantador.",
     trailerUrl: sampleTrailer,
-    image: "images/shrek-2.jpg",
-    post: "",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    image: "https://playmax.xyz/img/c/400/1/1439814412/487.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/f8b6c8fa6508e343804cd3bbe314ae604d234a2fec1bf9a3cdd91b872feb93dc.jpg",
+    movie: "/preview"
   },
   {
     id: "shrek-3",
     title: "Shrek 3",
-    year: 2016,
+    year: 2007,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Shrek y sus amigos van en busca del verdadero heredero de la Tierra Muy Muy Lejana, mientras la Princesa Fiona intenta evitar que el Príncipe Encantador ocupe el trono.",
     trailerUrl: sampleTrailer,
-    image: "images/shrek-3.jpg",
-    post: "",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    image: "https://m.media-amazon.com/images/S/pv-target-images/5b38695d4ad8fd3f6d59c9dec6e58dcce5113dbe58ba079a5c6034104fad7a84.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/837b0e7c4907d6dc41949aba42156710ecbb936bac5e82ee47f3deef6ceb049f.jpg",
+    movie: "/preview"
   },
   {
     id: "shrek-4",
     title: "Shrek 4",
-    year: 2016,
+    year: 2010,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Instalado en su vida matrimonial y totalmente domesticado, Shrek empieza a extrañar los días en los que él se sentía como un verdadero ogro. Engañado para firmar un contrato con el tortuoso Rumpelstiltskin, él se encuentra a sí mismo en una versión alterna de Muy Muy Lejano, donde los ogros son cazados, Rumpelstiltskin manda, y él y Fiona nunca se conocieron. Shrek debe hallar la forma de cancelar el contrato para restaurar su mundo y reclamar su amor verdadero.",
     trailerUrl: sampleTrailer,
-    image: "images/shrek-4.jpg",
-    post: "",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    image: "https://m.media-amazon.com/images/S/pv-target-images/a330d6bf726c4af2b90f2df1c3ebd0d0a61b2344ac70441bb9e9206c2b2674da.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/8c42560ed597df398e1d76ba5bbd1e4de50226d38f63d8e3b3a65b68b564168c.jpg",
+    movie: "/preview"
   },
   {
     id: "The_Gangster_The_Cop_The_Devil",
@@ -786,15 +785,15 @@ const MOVIES = [
   {
     id: "captain-america",
     title: "Capitan America - El Primer Vengador",
-    year: 2016,
+    year: 2011,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Tras tres meses de someterse a un programa de entrenamiento físico y táctico, encomiendan a Steve Rogers su primera misión como Capitán América. Armado con un escudo indestructible, emprende la guerra contra la perversa organización HYDRA.",
     trailerUrl: sampleTrailer,
     image: "images/captain-america.webp",
-    post: "",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    post: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/806ead63-e2ad-403e-8514-5b1ea63bb2d7/compose?aspectRatio=1.78&format=webp&width=1200",
+    movie: "https://drive.google.com/file/d/1yJGYgjq2mlMKQQXwFf2QAamhGZwZukPm/preview"
   },
   {
     id: "captain-america2",
@@ -803,7 +802,7 @@ const MOVIES = [
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"",
     trailerUrl: sampleTrailer,
     image: "images/captain-america2.jpg",
     post: "",
@@ -818,8 +817,9 @@ const MOVIES = [
     genres: ["Acción", "Aventura","Comedia","Animación"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
+    post: "https://todoinfantil.com/img/not_img/civil-war-capitan-america-marvel.png",
     image: "images/captain-america3.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    movie: "https://drive.google.com/file/d/15rJMLextuATJNTDphVzNpwHTre1XCMAr/preview"
   },
   {
     id: "toy-story",
@@ -831,7 +831,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzlHxBqvhvJFyM6qx1PSuKzjDmahiwmLd7w&s",
-    post: "",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/8d3f810be9313db33593677e5baac43e1e96d527cbf8b0f4edbf2721b5c5846f._UR1920,1080_SX500_FMjpg_.jpg",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
   {
@@ -867,10 +867,11 @@ const MOVIES = [
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Cuando Bonnie crea un nuevo juguete llamado Forky, un tenedor que piensa que es basura, Woody se embarca en una aventura para protegerlo y mostrarle su propósito como juguete. En el camino, se reencuentra con Bo Peep y descubre que el mundo es más grande de lo que imaginaba para un juguete, mientras que Forky lucha con su nueva identidad.",
     trailerUrl: sampleTrailer,
-    image: "https://m.media-amazon.com/images/S/pv-target-images/858666a691e20057054f181e55871fc9f7ebbe9004a181b89e6df322e73c1112.jpg",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    image: "https://m.media-amazon.com/images/S/pv-target-images/858666a691e20057054f181e55871fc9f7ebbe9004a181b89e6df322e73c1112.jpg",image: "https://m.media-amazon.com/images/S/pv-target-images/858666a691e20057054f181e55871fc9f7ebbe9004a181b89e6df322e73c1112.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/51b83557582e866e9dd96da2654f9433ac16886a7de563c02604c328357f9503.jpg",
+    movie: "https://drive.google.com/file/d/1MTNURDdhI15j-JnM5o9QqiE5ZOzyXbOq/view?usp=sharing"
   },
   {
     id: "toy-story-5",
@@ -905,11 +906,11 @@ const MOVIES = [
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
-    trailerUrl: sampleTrailer,
+    description:"Los Guardianes son contratados para proteger unas baterías para los Soberanos, pero Rocket las roba, provocando una persecución. Los Guardianes son rescatados por Ego, el padre de Peter Quill, quien los invita a su planeta. Allí, descubren que Ego es un ser celestial.",
+    trailerUrl: "",
     image: "images/guardianes-de-la-galaxia-2.avif",
-    post: "",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    post: "https://m.media-amazon.com/images/S/pv-target-images/b9c4b17bdf6db1ded2fc0035b46202100df7dc741dc98ddaf8f9ea817e8e74d1.jpg",
+    movie: "https://drive.google.com/file/d/10m6vG2w5eXZ_yPxwEJ1CFJFIORMvd6ME/preview"
   },
   {
     id: "guardians-of-the-galaxy-3",
@@ -940,15 +941,15 @@ const MOVIES = [
   {
     id: "sleepy-hollow",
     title: "La Leyenda del Jinete Sin Cabeza",
-    year: 2016,
+    year: 1999,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Un policía de la época colonial descubre una serie de horribles decapitaciones en una villa del norte de Nueva York.",
     trailerUrl: sampleTrailer,
     image: "images/la-leyenda-del-jinete-sin-cabeza.jpg",
-    post: "",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    post: "https://m.media-amazon.com/images/S/pv-target-images/c5a31e848714a2464837ca1cf04096c8bb6b1a6f351611d44b58cf1d0848e65e.jpg",
+    movie: "https://drive.google.com/file/d/1dxrITG2BKcAyWTq5i5Etah1Fp6iwWYoC/preview"
   },
   {
     id: "the-last-airbender",
@@ -1010,9 +1011,22 @@ const MOVIES = [
     genres: ["Acción", "Aventura","Comedia","Animación"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    image: "https://pics.filmaffinity.com/Kung_Fu_Panda_4-675656087-large.jpg",
-    post: "",
+    image: "https://m.media-amazon.com/images/S/pv-target-images/1b2855d75a12c03f471c8fa132bb2bae77aeaadd4e8fbf76fd879378424133f8.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/20bafb36b2d7cf540655f0b79b6d175b71959ab86ac7a3e8cbf48b95c7036cb6.jpg",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+  },
+  {
+    id: "robocop-2014",
+    title: "Robocop",
+    year: 2011,
+    duration: "1h 37min",
+    rating: "PG-13",
+    genres: ["Acción", "Aventura","Comedia","Animación"],
+    description:"Una compañía utiliza los restos destrozados de un policía muerto para crear a un policía robot indestructible. El policía conserva su memoria y decide vengarse de sus asesinos.",
+    trailerUrl: sampleTrailer,
+    image: "https://m.media-amazon.com/images/M/MV5BNDRkODU3MTktNTdjMi00OTkxLTljZjgtMzdhMGQxYTM4NjcwXkEyXkFqcGc@._V1_.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/8be920faafe8b3cb711f34697e4f9eadfac67b77c35d4e3bb259993432d2c395.jpg",
+    movie: "https://drive.google.com/file/d/1Yup4h__yTj6cBzcHoKD_Jci4q68hbI8a/preview"
   }
 ];
 
