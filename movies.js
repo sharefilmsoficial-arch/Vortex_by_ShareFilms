@@ -318,7 +318,7 @@ const MOVIES = [
   {
     id: "miraculous-world2",
     title: "Miraculous World Shangai: La Leyenda de LadyDragon",
-    year: 2020,
+    year: 2021,
     duration: "52min",
     rating: "TV-G",
     genres: ["Animación", "Aventura","Infantil"],
@@ -331,7 +331,7 @@ const MOVIES = [
   {
     id: "miraculous-world3",
     title: "Miraculous World París: Las Aventuras de Shadowbug y Claw Noir",
-    year: 2023,
+    year: 2022,
     duration: "52min",
     rating: "PTV-G",
     genres: ["Animación", "Aventura","Infantil","Acción","Fantasía"],
@@ -409,7 +409,7 @@ const MOVIES = [
   {
     id: "sonic-the-hedgehog-3",
     title: "Sonic 3: Próximamente",
-    year: 2022,
+    year: 2024,
     duration: "2h 2min",
     rating: "PG",
     genres: ["Infantil","Acción"],
@@ -487,7 +487,7 @@ const MOVIES = [
   {
     id: "deadpool",
     title: "DeadPool: Próximamente",
-    year: 2024,
+    year: 2016,
     duration: "2h 08min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
@@ -500,7 +500,7 @@ const MOVIES = [
   {
     id: "deadpool2",
     title: "DeadPool 2: Próximamente",
-    year: 2024,
+    year: 2018,
     duration: "2h 08min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
@@ -876,7 +876,7 @@ const MOVIES = [
   {
     id: "toy-story-5",
     title: "Toy Story 5: Próximamente",
-    year: 2016,
+    year: 2026,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
