@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Próximamente – Share Films</title>
+
+<link rel="shortcut icon" href="logo-removebg-preview.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<script src="movies.js" defer></script>
+<script src="proximamente.js" defer></script>
+</head>
+<body>
+
+<!-- === TOPBAR === -->
+<header class="topbar">
+  <div class="menu-toggle" id="menuToggle">
+    <span></span><span></span><span></span>
+  </div>
+  
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo-removebg-preview.png" alt="ShareFilms">
+    </a>
+  </div>
+
+  <input id="search" placeholder="Buscar..." />
+
+  <!-- Botones -->
+  <button id="btnLogin" class="btnBlue">Iniciar sesión</button>
+  <button id="btnRegister" class="btnBlue">Crear cuenta</button>
+</header>
+
+<!-- === MENÚ LATERAL === -->
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="series.html">Series</a></li>
+    <li><a href="#">Comedia</a></li>
+    <li><a href="#">Terror</a></li>
+    <li><a href="#">Acción</a></li>
+    <li><a href="mas-recientes.html">Más Recientes</a></li>
+    <li><a href="proximamente.html">Próximamente</a></li>
+    <li><a href="jokefilms.html">Joke</a></li>
+  </ul>
+</nav>
+
+<!-- === CONTENIDO PRINCIPAL === -->
+<main>
+
+  <h2 style="padding:20px; color:#00C0FF; text-shadow:0 0 10px #00c0ff75;">
+    🎬 Próximamente
+  </h2>
+
+  <section class="gallery" id="recent-gallery"></section>
+
+</main>
+
+<!-- === Modal Login === -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <h2>Iniciar Sesión</h2>
+
+    <form action="api/login.php" method="POST">
+      <input type="email" name="email" placeholder="Correo" required>
+
+      <div class="password-container">
+          <input type="password" id="loginPassword" name="password" placeholder="Contraseña" required>
+          <span class="toggle-password" onclick="togglePassword('loginPassword', this)">👁️</span>
+      </div>
+
+      <button type="submit" class="btnBlue">Acceder</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal de Login -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <h2>Iniciar Sesión</h2>
+
+    <form action="api/login.php" method="POST">
+
+      <input type="email" name="email" placeholder="Correo" required>
+
+      <!-- CAMPO PASSWORD con ojo -->
+      <div class="password-container">
+          <input type="password" id="loginPassword" name="password" placeholder="Contraseña" required>
+          <span class="toggle-password" onclick="togglePassword('loginPassword', this)">👁️</span>
+      </div>
+
+      <button type="submit" class="btnBlue">Acceder</button>
+    </form>
+
+  </div>
+</div>
+
+
+<!-- Modal de Registro -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <h2>Crear Cuenta</h2>
+
+    <form action="api/registrar.php" method="POST">
+
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="email" placeholder="Correo" required>
+
+      <!-- PASSWORD con ojo -->
+      <div class="password-container">
+          <input type="password" id="registerPassword" name="password" placeholder="Contraseña" required>
+          <span class="toggle-password" onclick="togglePassword('registerPassword', this)">👁️</span>
+      </div>
+
+      <button type="submit" class="btnBlue">Registrarme</button>
+    </form>
+
+  </div>
+</div>
+<style>
+.btnBlue {
+  background: #0099ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+}
+
+.modal-content {
+  background: #071223;
+  padding: 20px;
+  margin: 10% auto;
+  width: 300px;
+  border-radius: 10px;
+  color: white;
+}
+</style>
+
+<script>
+document.getElementById("btnLogin").onclick = () => {
+  document.getElementById("loginModal").style.display = "block";
+};
+
+document.getElementById("btnRegister").onclick = () => {
+  document.getElementById("registerModal").style.display = "block";
+};
+</script>
+
+
+<script>
+function openModal() {
+  document.getElementById("modalAcceso").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("modalAcceso").style.display = "none";
+}
+
+function enviarFormulario() {
+  const nombre = document.getElementById("nombre").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  if (!nombre || !email || !password) {
+    alert("Por favor llena todos los campos.");
+    return;
+  }
+
+  alert("Datos enviados:\nNombre: " + nombre + "\nEmail: " + email);
+  // Aquí puedes redirigir a la página
+  // window.location.href = "pagina.html";
+}
+<script>
+function togglePassword() {
+    const input = document.getElementById("password");
+    const icon = document.querySelector(".toggle-password");
+
+    if (input.type === "password") {
+        input.type = "text";
+        icon.textContent = "🙈"; // ojo cerrado
+    } else {
+        input.type = "password";
+        icon.textContent = "👁️"; // ojo abierto
+    }
+}
+</script>
+</body>
+</html>
+<!-- === Scripts del menú === -->
+<script>
+// Menú hamburguesa
+const menuToggle = document.getElementById("menuToggle");
+const sideMenu = document.getElementById("sideMenu");
+
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active");
+  sideMenu.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+  if (!sideMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+    sideMenu.classList.remove("active");
+    menuToggle.classList.remove("active");
+  }
+});
+</script>
+
+<!-- Mostrar modales -->
+<script>
+document.getElementById("btnLogin").onclick = () => {
+  loginModal.style.display = "block";
+};
+document.getElementById("btnRegister").onclick = () => {
+  registerModal.style.display = "block";
+};
+</script>
+
+<!-- Ver Password -->
+<script>
+function togglePassword(id, icon) {
+  const input = document.getElementById(id);
+  if (input.type === "password") {
+    input.type = "text";
+    icon.textContent = "🙈";
+  } else {
+    input.type = "password";
+    icon.textContent = "👁️";
+  }
+}
+</script>
+<style>
+footer {
+  text-align:center;
+  padding:25px;
+  background: rgba(20, 20, 20, 0.55);
+  color:#ccc;
+  margin-top:60px;
+  border-top:1px solid #0099ff;
+  box-shadow:0 -4px 20px #0099ff;
+  backdrop-filter: blur(12px);
+}
+
+footer a {
+  color:#0099ff;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+footer a:hover {
+  color:#fff;
+  text-shadow:0 0 10px #0099ff;
+}
+</style>
+<footer>
+© 2025 Share Films — Todos los derechos reservados.<br>
+<a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a> ·
+<a href="https://chat.whatsapp.com/HesN0nsEOeN0PbAJFevL37?mode=wwt" target="_blank">WhatsApp Group🪀</a> ·
+<a hreft="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a> ·
+<a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a> ·
+<a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a> · 
+<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Película</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="movie-page">
+
+<div id="app">
+  <div class="back-btn"><a href="javascript:history.back()">← Volver</a></div>
+
+  <div class="movie-hero" id="hero">
+    <div id="videoContainer">
+
+      <video id="bgVideo" autoplay muted playsinline></video>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="controls">
+      <h1 id="title"></h1>
+      <p id="meta"></p>
+      <p id="description" style="margin-top:12px;opacity:0.85;font-size:16px;"></p>
+
+      <div class="action-row">
+        <button id="playMovie" class="big">Reproducir película</button>
+
+        <div class="small-controls">
+          <button id="likeBtn" class="icon">
+                <img id="likeIcon" src="icons/like.png" style="width:22px;vertical-align:middle;">
+                 <span id="likeCount">0</span>
+          </button>
+
+          <button id="dislikeBtn" class="icon">
+                <img id="dislikeIcon" src="icons/dislike.png" style="width:22px;vertical-align:middle;">
+                <span id="dislikeCount">0</span>
+          </button>
+
+          <button id="playTrailerBtn" class="icon">▶Tráiler</button>
+          <button id="toggleMute" class="icon">
+                      <img id="muteIcon" src="icons/vol.png" style="width:22px;vertical-align:middle;">
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="movies.js"></script>
+
+<script>
+/* user id */
+const userId = localStorage.getItem("sf_user_id") || ('u_' + Math.random().toString(36).slice(2));
+localStorage.setItem("sf_user_id", userId);
+
+function qs(q){return document.querySelector(q);}
+function qsa(q){return document.querySelectorAll(q);}
+
+const params = new URLSearchParams(location.search);
+const id = params.get('id');
+const movie = MOVIES.find(m=>m.id===id);
+
+if(!movie){
+  document.body.innerHTML = '<p>Pelicula no encontrada. <a href="index.html">Volver</a></p>';
+  throw new Error('Movie not found');
+}
+
+qs('#title').textContent = movie.title;
+qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • ${movie.rating || ''}`;
+qs('#description').textContent = movie.description || "Sin descripción disponible.";
+
+// Definir bgVideo y toggleMute en scope global
+const bgVideo = document.getElementById("bgVideo");
+const toggleMute = qs('#toggleMute');
+const playTrailerBtn = document.getElementById("playTrailerBtn");
+
+// 🎬 Reproducir tráiler de fondo automáticamente a los 5 segundos
+setTimeout(() => {
+  if (!movie.trailerUrl) return;
+
+  bgVideo.src = movie.trailerUrl;
+  bgVideo.muted = true;
+
+  bgVideo.load();
+  bgVideo.play().catch(e => console.warn("Autoplay bloqueado:", e));
+
+  bgVideo.onended = () => {
+    bgVideo.pause();
+    bgVideo.currentTime = 0;
+  };
+
+}, 6000);
+
+// ▶ Botón para reproducir SOLO el tráiler
+playTrailerBtn.addEventListener("click", () => {
+  if (!movie.trailerUrl) return;
+
+  bgVideo.src = movie.trailerUrl;
+  bgVideo.muted = false;
+  bgVideo.currentTime = 0;
+  bgVideo.play();
+
+  bgVideo.onended = () => {
+    bgVideo.pause();
+    bgVideo.currentTime = 0;
+  };
+});
+
+// Fondo estático si no hay tráiler
+const hero = qs('#hero');
+if (movie.post) {
+  hero.style.backgroundImage = `url(${movie.post})`;
+  hero.style.backgroundSize = "cover";
+  hero.style.backgroundPosition = "center";
+} else {
+  hero.classList.add('no-video');
+}
+
+// 🔇 Botón mute/unmute
+const muteIcon = document.getElementById("muteIcon");
+
+toggleMute.addEventListener('click', () => {
+  bgVideo.muted = !bgVideo.muted;
+
+  // Cambiar imagen según mute/unmute
+  muteIcon.src = bgVideo.muted ? "icons/vol.png" : "icons/mudo.png";
+});
+
+// ▶ Reproducir película
+qs('#playMovie').addEventListener('click', ()=>{
+  if(movie.movie && movie.movie.startsWith('http')){
+    window.open(movie.movie, '_blank');
+  } else {
+    alert('Película no disponible.');
+  }
+});
+
+//👍👎 Likes y dislikes
+function applyVoteVisual() {
+  // Like
+  likeIcon.src = state.userVote === 1 
+    ? "icons/like.png"        // activo
+    : "icons/un-like.png";    // desactivado
+
+  // Dislike
+  dislikeIcon.src = state.userVote === -1
+    ? "icons/dislike.png"     // activo (lo puedes cambiar si tienes icono distinto)
+    : "icons/un-dislike.png";       // desactivado (idem)
+}
+const likeCountEl = qs('#likeCount');
+const dislikeCountEl = qs('#dislikeCount');
+
+let state = { userVote: 0 }; // 1=like, -1=dislike, 0=none
+
+async function fetchVotes(){
+  try{
+    const res = await fetch(`api/get_votes.php?id=${movie.id}`);
+    const data = await res.json();
+
+    likeCountEl.textContent = data.likes || 0;
+    dislikeCountEl.textContent = data.dislikes || 0;
+
+    const r2 = await fetch(`api/get_user_vote.php?id=${movie.id}&user=${userId}`);
+    const uv = await r2.json();
+
+    state.userVote = uv.vote || 0;
+    applyVoteVisual();
+  } catch(e){ console.error(e); }
+}
+
+async function sendVote(vote){
+  try{
+    const res = await fetch("api/vote.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        movie_id: movie.id,
+        user: userId,
+        vote: vote
+      })
+    });
+
+    const out = await res.json();
+
+    likeCountEl.textContent = out.likes;
+    dislikeCountEl.textContent = out.dislikes;
+
+    state.userVote = vote;
+    applyVoteVisual();
+  } catch(e){
+    console.error("Error enviando voto", e);
+  }
+}
+
+function applyVoteVisual(){
+  likeBtn.style.opacity = state.userVote===1 ? "1" : "0.6";
+  dislikeBtn.style.opacity = state.userVote===-1 ? "1" : "0.6";
+}
+
+likeBtn.addEventListener('click', ()=>{ state.userVote===1 ? sendVote(0) : sendVote(1); });
+dislikeBtn.addEventListener('click', ()=>{ state.userVote===-1 ? sendVote(0) : sendVote(-1); });
+
+fetchVotes();
+</script>
+
+<hr style="border:none;border-top:1px solid rgba(255,255,255,0.06);margin:20px 32px;">
+
+<section class="comments" id="commentsSection" style="padding:0 32px 40px;max-width:900px">
+  <h2>Comentarios</h2>
+
+  <div id="commentsList" aria-live="polite"></div>
+
+  <div style="margin-top:12px">
+    <input id="commentName" placeholder="Tu nombre (opcional)" style="padding:8px;border-radius:6px;border:1px solid rgba(255,255,255,0.06);width:40%;margin-right:8px" />
+    <textarea id="commentText" placeholder="Deja un comentario..." style="width:100%;min-height:72px;margin-top:8px;padding:10px;border-radius:6px;border:1px solid rgba(255,255,255,0.06)"></textarea>
+
+    <div style="display:flex;gap:8px;margin-top:8px">
+      <button id="submitComment" class="big">Comentar</button>
+      <button id="clearComments" class="icon">🧹 Limpiar</button>
+    </div>
+  </div>
+
+  <h3>Apóyanos con una donación </h3>
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="TU_CODIGO_DE_PAYPAL" />
+ <input type="submit" value="Donar" />
+</form>
+
+</section>
+
+<script>
+const commentsList = document.getElementById('commentsList');
+const commentName = document.getElementById('commentName');
+const commentText = document.getElementById('commentText');
+const submitComment = document.getElementById('submitComment');
+const clearComments = document.getElementById('clearComments');
+
+commentName.value = localStorage.getItem('sf_user_name') || '';
+
+async function loadComments(){
+  try{
+    const res = await fetch(`api/get_comments.php?id=${movie.id}`);
+    const data = await res.json();
+
+    commentsList.innerHTML = "";
+
+    if(!Array.isArray(data) || data.length === 0){
+      commentsList.innerHTML = '<p style="opacity:0.7">Sin comentarios. Sé el primero.</p>';
+      return;
+    }
+
+    data.forEach(c=>{
+      const el = document.createElement('div');
+      el.className = 'comment';
+      el.style.padding='8px 12px';
+      el.style.borderRadius='8px';
+      el.style.marginBottom='8px';
+      el.style.background='rgba(255,255,255,0.02)';
+
+      el.innerHTML = `
+        <strong>Usuario #${escapeHtml(c.usuario_id || "0")}</strong>
+        <span style="opacity:0.6;font-size:12px;margin-left:8px">${escapeHtml(c.fecha || "")}</span>
+        <div style="margin-top:6px">${escapeHtml(c.comentario || "")}</div>
+      `;
+
+      commentsList.appendChild(el);
+    });
+
+  } catch(e){
+    console.error("Error cargando comentarios", e);
+  }
+}
+
+function escapeHtml(s){ 
+  if(!s) return ''; 
+  return s.replace(/&/g,'&amp;')
+          .replace(/</g,'&lt;')
+          .replace(/>/g,'&gt;'); 
+}
+
+submitComment.addEventListener('click', async ()=>{
+  const name = commentName.value.trim();
+  const text = commentText.value.trim();
+  if(!text){ alert('Escribe un comentario'); return; }
+  localStorage.setItem('sf_user_name', name);
+
+  try{
+    const res = await fetch("api/add_comment.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        movie_id: movie.id,
+        name: name,
+        text: text
+      })
+    });
+
+    const data = await res.json();
+
+    if(data.success){
+      commentText.value='';
+      loadComments();
+    }
+    else {
+      alert('No se pudo guardar el comentario');
+    }
+  }catch(e){
+    console.error(e);
+    alert('Error al enviar');
+  }
+});
+
+clearComments.addEventListener('click', async ()=>{
+  if(!confirm('¿Eliminar todos los comentarios de esta película?')) return;
+
+  try{
+    const res = await fetch("api/clear_comments.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ movie_id: movie.id })
+    });
+
+    const data = await res.json();
+    if(data.success) loadComments();
+  }catch(e){
+    console.error(e);
+  }
+});
+
+loadComments();
+</script>
+
+<style>
+footer {
+  text-align:center;
+  padding:25px;
+  background: rgba(20, 20, 20, 0.55);
+  color:#ccc;
+  margin-top:60px;
+  border-top:1px solid #0099ff;
+  box-shadow:0 -4px 20px #0099ff;
+  backdrop-filter: blur(12px);
+}
+
+footer a {
+  color:#0099ff;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+footer a:hover {
+  color:#fff;
+  text-shadow:0 0 10px #0099ff;
+}
+</style>
+
+<footer>
+© 2025 Share Films — Todos los derechos reservados.<br>
+<a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a> ·
+<a href="https://chat.whatsapp.com/HesN0nsEOeN0PbAJFevL37?mode=wwt" target="_blank">WhatsApp Group🪀</a> ·
+<a hreft="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a> ·
+<a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a> ·
+<a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a> · 
+<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a> · 
+<a target="_blank" href="https://icons8.com/icon/83166/facebook-like">Me gusta</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>
+</footer>
+
+</body>
+</html>

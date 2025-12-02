@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Share Films 4</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <div class="logo">
+  <img src="logo.jpeg" alt="ShareSeries">
+</div>
+  <input id="search" placeholder="Buscar películas..." />
+</header>
+
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="series.html">Series</a></li>
+    <li><a href="#">Comedia</a></li>
+    <li><a href="#">Terror</a></li>
+    <li><a href="#">Acción</a></li>
+    <li><a href="mas-recientes.html">Más Recientes</a></li>
+    <li><a href="proximamente.html">Próximamente</a></li>
+    <li><a href="jokefilms.html">Joke</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="gallery" id="gallery"></section>
+  <section class="gallery" id="recentSection" style="display:none;"></section>
+</main>
+
+<script src="joke.js"></script>
+
+<script>
+// Generar user ID
+if (!localStorage.getItem("sf_user_id")) {
+  localStorage.setItem("sf_user_id", 'u_' + Math.random().toString(36).slice(2));
+}
+const userId = localStorage.getItem("sf_user_id");
+</script>
+
+<script>
+// --- Galería ---
+const gallery = document.getElementById('gallery');
+
+function createCard(movie){
+  const a = document.createElement('a');
+  a.className = 'card-link';
+  a.href = `jokemovie.html?id=${movie.id}`;
+
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.style.backgroundImage = `url(${movie.image})`;
+
+  const info = document.createElement('div');
+  info.className = 'card-info';
+  info.innerHTML = `<h3>${movie.title}</h3><p>${movie.year || ''} • ${movie.duration || ''}</p>`;
+
+  card.appendChild(info);
+  a.appendChild(card);
+  return a;
+}
+
+MOVIES.forEach(m => gallery.appendChild(createCard(m)));
+
+document.getElementById('search').addEventListener('input', e => {
+  const q = e.target.value.toLowerCase();
+  gallery.innerHTML = '';
+  MOVIES.filter(m => m.title.toLowerCase().includes(q))
+        .forEach(m => gallery.appendChild(createCard(m)));
+});
+</script>
+
+<script>
+// --- Menú hamburguesa ---
+const menuToggle = document.getElementById('menuToggle');
+const sideMenu = document.getElementById('sideMenu');
+
+// Abrir/cerrar menú
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  sideMenu.classList.toggle('active');
+});
+
+// Cerrar menú al hacer clic en un enlace
+document.querySelectorAll('#sideMenu a').forEach(link => {
+  link.addEventListener('click', () => {
+    sideMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+  });
+});
+
+// Cerrar menú al hacer clic fuera
+document.addEventListener('click', (e) => {
+  const isClickInsideMenu = sideMenu.contains(e.target);
+  const isClickToggle = menuToggle.contains(e.target);
+
+  if (sideMenu.classList.contains('active') &&
+      !isClickInsideMenu &&
+      !isClickToggle) {
+    sideMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+  }
+});
+</script>
+<style>footer {
+  text-align:center;
+  padding:25px;
+  background: rgba(20, 20, 20, 0.55);
+  color:#ccc;
+  margin-top:60px;
+  border-top:1px solid #0099ff;
+  box-shadow:0 -4px 20px #0099ff;
+  backdrop-filter: blur(12px);
+}
+
+footer a {
+  color:#0099ff;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+footer a:hover {
+  color:#fff;
+  text-shadow:0 0 10px #0099ff;
+}</style>
+
+<footer>
+© 2025 Share Films — Todos los derechos reservados.<br>
+<a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a> ·
+<a href="https://chat.whatsapp.com/HesN0nsEOeN0PbAJFevL37?mode=wwt" target="_blank">WhatsApp Group🪀</a> ·
+<a hreft="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a> ·
+<a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a> ·
+<a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a> · 
+<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a>
+</footer>
+</body>
+</html>
