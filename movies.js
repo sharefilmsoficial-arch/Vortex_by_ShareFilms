@@ -780,7 +780,7 @@ const MOVIES = [
     genres: ["Acción", "Aventura","Comedia","Animación"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    image: "images/destino-final-lazos-de-sangre.jpg",
+    image: "images/destino-final-lazos-de-sangre.webp",
     post: "",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   },
